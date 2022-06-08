@@ -33,6 +33,7 @@ header h1 {
     margin: 0;
     font-size: 30px;
     color: var(--primary-color);
+    font-family: 'Brush Script MT';
 }
 header a {
     text-decoration: none;
@@ -114,6 +115,7 @@ header nav ul li a:hover {
     margin: 0 auto;
     font-size: 36px;
     color: #0b0312;
+    font-family: 'Brush Script MT';
 }
 
 .intro p {
@@ -152,6 +154,7 @@ header nav ul li a:hover {
     font-size: 46px;
     flex: 1 30%;
     text-align: left;
+    font-family: 'Brush Script MT';
 }
 
 .step h3 {
@@ -224,6 +227,7 @@ header nav ul li a:hover {
     margin: 0;
     font-size: 30px;
     color: #231033;
+    font-family: 'Brush Script MT';
 }
 
 .contact-info > * {
