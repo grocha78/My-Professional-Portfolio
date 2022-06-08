@@ -4,12 +4,6 @@
     --tertiary-color: #422d54;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     /* more on this crazy alphanumerical value in a minute! */
     color: var(--primary-color);
@@ -37,9 +31,8 @@ header {
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 30px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
     text-decoration: none;
@@ -60,9 +53,8 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
@@ -74,7 +66,7 @@ header nav ul li a:hover {
 
 /* Hero Style Start */
 .hero {
-    background-image: url(../images/Mushroom.jpeg);
+    background-image: url(../images/Color.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -87,23 +79,26 @@ header nav ul li a:hover {
 /* Hero Style End */
 
 .hero-cta {
-    width: 35%;
+    width: 100%;
     text-align: center;
     margin: 3.5%;
-    color: #fff;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 3.5;
 }
 
 .hero-cta h2 {
-    text-align: end;
-    font-style: italic;
-    font-size: 35px;
-    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Brush Script MT';
+    font-size: 30px;
+    color: rgb(221, 232, 14);
+}
+
+.hero-cta a:link {
+    text-decoration: none;
 }
 
 .intro {
-    background-image: url(../images/Mushroom.jpeg);
+    background-image: url(../images/Color.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -113,36 +108,27 @@ header nav ul li a:hover {
     background-attachment: fixed;
     background-position: 100%;
 }
-
 .intro h2 {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
     margin: 0 auto;
     font-size: 36px;
-    color: var(--primary-color);
-    background-image: url(../images/Mushroom.jpeg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 100%;
+    color: #0b0312;
 }
 
 .intro p {
     line-height: 1.7;
-    color: var(--primary-color);
+    color: #0b0312;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
     text-align: left;
+    font-weight: bold;
 }
 
 .steps {
     background: var(--primary-color);
-    background-image: url(../images/Mushroom.jpeg);
+    background-image: url(../images/Color.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -153,12 +139,8 @@ header nav ul li a:hover {
     background-position: 100%;
 }
 
-.steps div {
-}
-
 .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
+    margin: 50px;
 }
 
 .step-img img {
@@ -166,14 +148,14 @@ header nav ul li a:hover {
 }
 
 .steps h2 {
-    color: var(--primary-color);
+    color: #0b0312;
     font-size: 46px;
     flex: 1 30%;
     text-align: left;
 }
 
 .step h3 {
-    color: var(--primary-color);
+    color: #0b0312;
     font-size: 46px;
     flex: 1 30%;
 }
@@ -186,23 +168,11 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--primary-color);
-}
-
-.step:last-child {
-    border-bottom: none;
-}
-
-.step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .section-title {
     font-size: 48px;
-    color: var(--primary-color);
+    color: #0b0312;
     border-bottom: 3px solid;
     padding-bottom: 20px;
     text-align: center;
@@ -211,79 +181,11 @@ header nav ul li a:hover {
 }
 
 .primary-border {
-    border-color: var(--primary-color);
+    border-color: #0b0312;
 }
 
 .secondary-border {
-    border-color: var(--primary-color);
-}
-
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-image: url(../images/Mushroom.jpeg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 100%;
-}
-
-.flex-row {
-    background-image: url(../images/Mushroom.jpeg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 100%;
-}
-
-.trainer {
-    margin: 20px;
-    background: var(--primary-color);
-    color: var(--primary-color);
-    flex: 1;
-    background-image: url(../images/Mushroom.jpeg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 100%;
-}
-
-.trainer img {
-    width: 100%;
-}
-
-.trainer-bio {
-    padding: 25px;
-    line-height: 1.3;   
-}
-
-.trainer-bio h3 {
-    font-size: 28px;
-}
-
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-
-.trainer-bio p {
-    font-size: 17px;
+    border-color: #0b0312;
 }
 
 .text-left {
@@ -298,9 +200,14 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
+.solid-border {
+    border-color: #0b0312;
+}
+
 /* REACH OUT STYLES START */
 .contact {
-    background-image: url(../images/Mushroom.jpeg);
+    padding: 21px 12px;
+    background-image: url(../images/Color.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -312,7 +219,11 @@ header nav ul li a:hover {
 }
 
 .contact h2 {
-    color: var(--primary-color);
+    padding: 12px 68px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 30px;
+    color: #231033;
 }
 
 .contact-info > * {
@@ -324,10 +235,6 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.contact-info iframe {
-    height: 400px;
 }
 
 .contact-info div {
@@ -350,7 +257,7 @@ header nav ul li a:hover {
 .contact-info a {
     color: var(--primary-color);
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
